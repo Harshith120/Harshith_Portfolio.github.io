@@ -1,164 +1,75 @@
-<!DOCTYPE HTML>
-
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-	<title>Harshith Muthuluri Portfolio</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
-
-
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101114">
+  <meta name="description" content="Harshith Muthuluri's portfolio: software projects in Android, web development, data visualization, and systems programming.">
+  <title>Harshith Muthuluri — Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{color-scheme:dark;--bg:#101114;--panel:#17191e;--text:#f2f1ed;--muted:#a3a5ad;--line:#2b2d33;--accent:#c5f467;--max:1100px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}.mono,.eyebrow,.tag{font-family:'DM Mono',monospace}.mono,.eyebrow{font-size:.76rem;letter-spacing:.08em;text-transform:uppercase}.muted{color:var(--muted)}
+    header{position:sticky;top:0;z-index:5;background:rgba(16,17,20,.88);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.07)}.nav{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font-family:'Space Grotesk',sans-serif;font-weight:700;letter-spacing:-.04em}.brand span{color:var(--accent)}.nav-links{display:flex;align-items:center;gap:28px;font-size:.9rem}.nav-links a:not(.button){color:var(--muted)}.nav-links a:hover{color:var(--text)}.button{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border:1px solid var(--line);border-radius:7px;font-size:.88rem;font-weight:600;transition:.2s}.button:hover{border-color:var(--accent);color:var(--accent)}.button.primary{background:var(--accent);border-color:var(--accent);color:#171a10}.button.primary:hover{background:#d6ff88}
+    .hero{padding:105px 0 90px;display:grid;grid-template-columns:1.5fr .7fr;gap:60px;align-items:center;min-height:570px}.eyebrow{color:var(--accent);display:flex;align-items:center;gap:10px}.eyebrow:before{content:'';width:24px;height:1px;background:var(--accent)}h1,h2,h3,p{margin-top:0}h1,h2,h3{font-family:'Space Grotesk',sans-serif;line-height:1.12;letter-spacing:-.045em}h1{font-size:clamp(3.2rem,7vw,6.1rem);margin:23px 0 20px}h1 span{color:var(--accent)}.hero-copy{max-width:620px;color:var(--muted);font-size:1.08rem}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.hero-card{border:1px solid var(--line);background:linear-gradient(145deg,#1c1e23,#141519);padding:28px;border-radius:12px;position:relative;overflow:hidden}.hero-card:after{content:'</>';position:absolute;right:15px;top:-35px;color:rgba(197,244,103,.08);font:700 140px 'DM Mono',monospace}.availability{display:inline-flex;align-items:center;gap:9px;color:var(--muted);font-size:.82rem}.dot{width:8px;height:8px;background:var(--accent);border-radius:50%;box-shadow:0 0 12px #c5f46780}.hero-card h2{font-size:1.4rem;margin:24px 0 12px}.hero-card p{color:var(--muted);font-size:.92rem;margin:0}.hero-stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:28px}.stat{padding-top:14px;border-top:1px solid var(--line)}.stat strong{display:block;font:600 1.08rem 'Space Grotesk',sans-serif}.stat small{color:var(--muted);font-size:.78rem}
+    section.content{padding:76px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:32px}.section-head h2{font-size:clamp(2rem,4vw,3rem);margin:10px 0 0}.section-head p{max-width:400px;color:var(--muted);margin:0}.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.project{padding:25px;border:1px solid var(--line);border-radius:10px;background:var(--panel);display:flex;flex-direction:column;min-height:260px;transition:transform .2s,border-color .2s}.project:hover{transform:translateY(-3px);border-color:#555a61}.project-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}.project-num{color:var(--accent);font: .78rem 'DM Mono',monospace}.project-link{font-size:1.2rem;color:var(--muted)}.project h3{font-size:1.35rem;margin:0 0 10px}.project p{color:var(--muted);font-size:.92rem;margin-bottom:20px}.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}.tag{border:1px solid var(--line);border-radius:4px;padding:4px 8px;color:#c6c7cb;font-size:.68rem}.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.skill{padding:18px;border:1px solid var(--line);border-radius:8px;background:var(--panel)}.skill strong{display:block;font-family:'Space Grotesk',sans-serif;margin-bottom:5px}.skill span{color:var(--muted);font-size:.82rem}.contact-box{display:flex;justify-content:space-between;align-items:center;gap:30px;padding:36px;border:1px solid var(--line);border-radius:12px;background:radial-gradient(ellipse at 90% 10%,#c5f46712,transparent 45%),var(--panel)}.contact-box h2{font-size:2rem;margin:8px 0}.contact-box p{color:var(--muted);margin:0}.contact-actions{display:flex;gap:10px;flex-wrap:wrap}footer{padding:26px 0 38px;color:var(--muted);font-size:.82rem}.foot{display:flex;justify-content:space-between;gap:20px;align-items:center}footer a:hover{color:var(--accent)}
+    @media(max-width:760px){.wrap{width:min(100% - 36px,var(--max))}.nav{height:64px}.nav-links{gap:16px}.nav-links>a:not(.button){display:none}.hero{grid-template-columns:1fr;gap:34px;padding:75px 0}.hero-card{max-width:500px}.section-head{display:block}.section-head p{margin-top:14px}.skills{grid-template-columns:repeat(2,1fr)}.contact-box{align-items:flex-start;flex-direction:column}.projects{grid-template-columns:1fr}}
+    @media(max-width:420px){.wrap{width:calc(100% - 28px)}.nav-links{gap:10px}.nav .button{padding:8px 10px}.hero{padding:60px 0}.skills{grid-template-columns:1fr 1fr}.skill{padding:14px}.foot{align-items:flex-start;flex-direction:column}.contact-box{padding:25px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
 </head>
+<body>
+  <header>
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Harshith Muthuluri home">HM<span>.</span></a>
+      <div class="nav-links">
+        <a href="#projects">Projects</a><a href="#about">About</a>
+        <a class="button" href="https://github.com/Harshith120" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="wrap">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div>
+          <div class="eyebrow">Software developer · Portfolio</div>
+          <h1 id="hero-title">Hello, I’m<br><span>Harshith.</span></h1>
+          <p class="hero-copy">I build thoughtful software across Android, web, data, and systems. I enjoy turning ideas into practical projects and learning by making things that work.</p>
+          <div class="hero-actions"><a class="button primary" href="#projects">Explore my work <span aria-hidden="true">↓</span></a><a class="button" href="https://www.linkedin.com/in/harshith-muthuluri" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <aside class="hero-card" aria-label="A little about me">
+          <div class="availability"><span class="dot" aria-hidden="true"></span> Curious by nature, builder by habit</div>
+          <h2>Code with purpose.<br>Learn with every build.</h2>
+          <p>From Kotlin apps to data visualizations and low-level systems work, I like exploring how technology can solve real problems.</p>
+          <div class="hero-stats"><div class="stat"><strong>Android</strong><small>App development</small></div><div class="stat"><strong>Web</strong><small>JavaScript · HTML · CSS</small></div></div>
+        </aside>
+      </section>
 
-<body class="is-preload">
+      <section class="content" id="projects" aria-labelledby="projects-title">
+        <div class="section-head"><div><div class="eyebrow">Selected work</div><h2 id="projects-title">Projects</h2></div><p>A selection of projects across mobile development, web, data visualization, and computer systems.</p></div>
+        <div class="projects">
+          <article class="project"><div class="project-top"><span class="project-num">01 / ANDROID</span><a class="project-link" href="https://github.com/Harshith120/TicTacToe-android" target="_blank" rel="noopener noreferrer" aria-label="View TicTacToe Android on GitHub">↗</a></div><h3>TicTacToe Android</h3><p>An Android take on the classic Tic-Tac-Toe game, built with Kotlin.</p><div class="tags"><span class="tag">Kotlin</span><span class="tag">Android</span></div></article>
+          <article class="project"><div class="project-top"><span class="project-num">02 / DATA</span><a class="project-link" href="https://github.com/Harshith120/Data-Visualization" target="_blank" rel="noopener noreferrer" aria-label="View Data Visualization on GitHub">↗</a></div><h3>Data Visualization</h3><p>Exploring a hotel customer dataset with charts and visualizations, including histograms, scatter plots, and time-series views.</p><div class="tags"><span class="tag">Jupyter Notebook</span><span class="tag">Data</span></div></article>
+          <article class="project"><div class="project-top"><span class="project-num">03 / SYSTEMS</span><a class="project-link" href="https://github.com/Harshith120/Operating-Systems-Linux-" target="_blank" rel="noopener noreferrer" aria-label="View Operating Systems project on GitHub">↗</a></div><h3>File System Operations</h3><p>A systems programming project covering file-system initialization, data blocks, persistence, and file operations.</p><div class="tags"><span class="tag">C++</span><span class="tag">Operating Systems</span></div></article>
+          <article class="project"><div class="project-top"><span class="project-num">04 / WEB</span><a class="project-link" href="https://github.com/Harshith120/US-Stock_Market_Tracker" target="_blank" rel="noopener noreferrer" aria-label="View US Stock Market Tracker on GitHub">↗</a></div><h3>US Stock Market Tracker</h3><p>A JavaScript project focused on tracking and presenting US stock market information.</p><div class="tags"><span class="tag">JavaScript</span><span class="tag">Web</span></div></article>
+          <article class="project"><div class="project-top"><span class="project-num">05 / WEB</span><a class="project-link" href="https://github.com/Harshith120/JavaScript-HTML-CSS" target="_blank" rel="noopener noreferrer" aria-label="View JavaScript HTML CSS projects on GitHub">↗</a></div><h3>Web Fundamentals</h3><p>A collection of small projects and exercises built while exploring front-end development.</p><div class="tags"><span class="tag">JavaScript</span><span class="tag">HTML</span><span class="tag">CSS</span></div></article>
+          <article class="project"><div class="project-top"><span class="project-num">06 / ANDROID</span><a class="project-link" href="https://github.com/Harshith120/Fetch-Assessment" target="_blank" rel="noopener noreferrer" aria-label="View Fetch Assessment on GitHub">↗</a></div><h3>Fetch Assessment</h3><p>A Kotlin project completed as an assessment, showcasing Android development practice.</p><div class="tags"><span class="tag">Kotlin</span><span class="tag">Android</span></div></article>
+        </div>
+      </section>
 
-	<!-- Wrapper -->
-	<div id="wrapper" class="fade-in">
+      <section class="content" id="about" aria-labelledby="about-title">
+        <div class="section-head"><div><div class="eyebrow">A bit about me</div><h2 id="about-title">Tools I work with</h2></div><p>I’m interested in building across the stack and expanding my skills through hands-on projects.</p></div>
+        <div class="skills"><div class="skill"><strong>Mobile</strong><span>Kotlin · Android</span></div><div class="skill"><strong>Web</strong><span>JavaScript · HTML · CSS</span></div><div class="skill"><strong>Systems</strong><span>C++ · Linux</span></div><div class="skill"><strong>Data</strong><span>Jupyter · Visualization</span></div></div>
+      </section>
 
-		<!-- Intro -->
-		<div id="intro">
-			<h1>Welcome to my World <br />
-				Harshith Muthuluri</h1>
-			<p>Hello, I'm Harshith With expertise in full-stack development, machine learning, and system design, I
-				enjoy building scalable and efficient solutions that drive innovation. Beyond coding, I thrive on
-				collaboration, relationship-building, and bringing creative ideas to life. When I’m not working on tech
-				projects, you’ll find me socializing, listening to music, or playing sports. I'm always open to new
-				opportunities and collaborations.
-
-				<img src="images/my_picture.jpg">
-
-
-
-			</p>
-			<ul class="actions">
-				<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-			</ul>
-		</div>
-
-
-
-		<!-- Nav -->
-		<nav id="nav">
-			<ul class="links">
-				<li class="active"><a href="index.html">Projects</a></li>
-				<li><a href="certifications.html">Certifications</a></li>
-
-			</ul>
-			<ul class="icons">
-				<li><a href="https://www.linkedin.com/in/harshith-muthuluri" class="icon brands alt fa-linkedin"><span
-							class="label">linkedin</span></a>
-				</li>
-				<li><a href="https://github.com/Harshith120" class="icon brands alt fa-github"><span
-							class="label">GitHub</span></a>
-				</li>
-			</ul>
-		</nav>
-
-		<!-- Main -->
-		<div id="main">
-
-			<!-- Featured Post -->
-			<article class="post featured">
-				<header class="major">
-
-					<h2><a
-							href="https://github.com/Harshith120/Data-Visualization/blob/main/Harshith_Muthuluri_Assignment_1.ipynb">Data
-							Visualization Hotel Customer_Dataset
-						</a></h2>
-					<p>In this project, we visualize the data from the given dataset using bar graphs, pie charts,
-						histogram,
-						bubble chart, scatter plot, donut chart, dual axis line chart, formatted line chart and plotting
-						dataframes.
-					</p>
-				</header>
-				<a href="https://github.com/Harshith120/Data-Visualization/blob/main/Harshith_Muthuluri_Assignment_1.ipynb"
-					class="image main"><img src="images/Data Visualization_image.png" alt="" /></a>
-				<ul class="actions special">
-					<li><a href="https://github.com/Harshith120/Data-Visualization/blob/main/Harshith_Muthuluri_Assignment_1.ipynb"
-							class="button large">View Project</a></li>
-				</ul>
-			</article>
-
-			<!-- Posts -->
-			<section class="posts">
-				<article>
-					<header>
-
-						<h2><a href="https://github.com/Harshith120/Operating-Systems-Linux-/blob/main/fs_ops.cpp">Simulating
-								and Managing File Systems in Lunix<br />
-							</a></h2>
-					</header>
-					<a href="https://github.com/Harshith120/Operating-Systems-Linux-/blob/main/fs_ops.cpp"
-						class="image fit"><img src="images/linux_image.jpeg" alt="" /></a>
-					<p>Disk Initialization, Format the File System, Manage Data Blocks Efficiency, Load and Save File
-						System, File Operations, User Management. </p>
-					<ul class="actions special">
-						<li><a href="https://github.com/Harshith120/Operating-Systems-Linux-/blob/main/fs_ops.cpp"
-								class="button">View Project</a></li>
-					</ul>
-				</article>
-				<article>
-					<header>
-
-						<h2><a href="https://github.com/Harshith120/JavaScript-HTML-CSS"> JavaScript, HTML & CSS</a>
-						</h2>
-					</header>
-					<a href="https://github.com/Harshith120/JavaScript-HTML-CSS" class="image fit"><img
-							src="images/jsshtmlcss_image.png" alt="" /></a>
-					<p>Simple projects for building a palindrome checker, roman numeral converter, telephone number
-						validator, cash register, pokemon search </p>
-					<ul class="actions special">
-						<li><a href="https://github.com/Harshith120/JavaScript-HTML-CSS" class="button">View Project</a>
-						</li>
-					</ul>
-				</article>
-
-
-				<footer id="footer">
-
-					<section class="split contact">
-						<section class="alt">
-
-							<h3>Address</h3>
-							<p> Prospect Heights, IL</p>
-						</section>
-						<section>
-							<h3>Phone</h3>
-							<p>(469) 977 5428</p>
-						</section>
-						<section>
-							<h3>Email</h3>
-							<p>muthuluriharshith@gmail.com</p>
-						</section>
-						<section>
-							<h3>Social</h3>
-							<ul class="icons alt">
-								<li><a href="https://www.linkedin.com/in/harshith-muthuluri"
-										class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
-								<li><a href="https://github.com/Harshith120" class="icon brands alt fa-github"><span
-											class="label">GitHub</span></a></li>
-							</ul>
-						</section>
-					</section>
-
-				</footer>
-
-
-
-				<!-- Scripts -->
-				<script src="assets/js/jquery.min.js"></script>
-				<script src="assets/js/jquery.scrollex.min.js"></script>
-				<script src="assets/js/jquery.scrolly.min.js"></script>
-				<script src="assets/js/browser.min.js"></script>
-				<script src="assets/js/breakpoints.min.js"></script>
-				<script src="assets/js/util.js"></script>
-				<script src="assets/js/main.js"></script>
-
+      <section class="content" id="contact" aria-labelledby="contact-title">
+        <div class="contact-box"><div><div class="eyebrow">Get in touch</div><h2 id="contact-title">Let’s build something.</h2><p>Open to connecting about projects, ideas, and opportunities.</p></div><div class="contact-actions"><a class="button primary" href="mailto:muthuluriharshith@gmail.com">Send an email <span aria-hidden="true">↗</span></a><a class="button" href="https://www.linkedin.com/in/harshith-muthuluri" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div></div>
+      </section>
+    </div>
+  </main>
+  <footer><div class="foot wrap"><span>© <span id="year">2026</span> Harshith Muthuluri</span><span>Designed and built for the web · <a href="https://github.com/Harshith120" target="_blank" rel="noopener noreferrer">GitHub ↗</a></span></div></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
-
 </html>
